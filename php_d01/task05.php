@@ -1,6 +1,8 @@
 <?php
-function exchanger ($var1, $var2)
+function exchanger (&$var1, &$var2): void
 {
-    return $var2 and $var1;
+    $var3 = $var2;
+    $var2 = $var1;
+    $var1 = $var3;
 }
 ?>
